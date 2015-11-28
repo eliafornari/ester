@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js" > <!--<![endif]-->
+
+
+
+<head>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <title>ESTER</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css"> -->
+  <link rel="stylesheet" href="stylesheet/css/reset.css">
+  <link rel="stylesheet" href="app.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://www.bandsintown.com/javascripts/bit_widget.js"></script>
+
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="/concat.js"></script>
+
+ <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+  <meta name="fragment" content="!">
+
+  <base href="/">
+
+  <!-- .........................<span app-version></span> ....................-->
+
+
+
+
+
+
+
+</head>
+
+
+
+<!-- .................................. Body ...............................-->
+
+<body ng-controller="routeController" google-analytics page-loading-spinner >
+<!--
+  <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script>
+  <a href="http://www.bandsintown.com/Highly%20Suspect" class="bit-widget-initializer" data-artist="HighlySuspect" data-prefix="fbjs">Highly Suspect Tour Dates</a> -->
+
+  <!-- .................................. Aside ...............................-->
+<nav-directive></nav-directive>
+  <!-- ng-mouseleave="hoverOut()" -->
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+<!-- <bands-in-town></bands-in-town> -->
+
+
+
+
+
+
+  <div ng-show="pageLoading" class="page-loader-div">
+
+   <div class="page-loader-wrapper" alt="Loading icon" style="background-image: url('assets/images/static1.squarespace.png')">
+
+   </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- .................................. Main ...............................-->
+
+<!-- <div class="main-div" class="main-{{pageClass}}" ng-click="homeClick()"> -->
+  <main ng-view="" class='main' autoscroll="" ng-hide="pageLoading">
+
+  </main>
+<!-- </div>-->
+
+
+
+<!-- 86400 -->
+
+</body>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+
+
+
+</html>

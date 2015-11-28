@@ -1,0 +1,50 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.example.com</loc>
+    <loc>http://www.example.com/stories</loc>
+    <loc>http://www.example.com/life</loc>
+    <loc>http://www.example.com/projects</loc>
+    <loc>http://www.example.com/contact</loc>
+
+
+
+
+
+
+
+
+    <image:image>
+       <image:loc>http://eliafornari.com/image.jpg</image:loc>
+       <image:loc>http://eliafornari.com/image.jpg</image:loc>
+
+       <image:loc>http://eliafornari.com/image.jpg</image:loc>
+
+       <image:loc>http://eliafornari.com/image.jpg</image:loc>
+
+       <image:caption>Dogs playing poker</image:caption>
+    </image:image>
+
+
+
+
+
+    <video:video>
+      <video:content_loc>
+        http://www.eliafornari.com/images/elia_running.mp4
+      </video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">
+        http://www.eliafornari.com/videoplayer.swf?video=123
+      </video:player_loc>
+      <video:thumbnail_loc>
+        http://www.eliafornari.com/thumbs/123.jpg
+      </video:thumbnail_loc>
+      <video:title>run in 3d</video:title>
+      <video:description>
+        where are you running if?
+      </video:description>
+    </video:video>
+  </url>
+</urlset> -->

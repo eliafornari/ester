@@ -1,0 +1,83 @@
+/*....................................SCSS VARIABLES..................................*/
+
+$z-nav: 4;
+// ........................................................FONT FAMILIES
+$font-one: "minerva-modern";
+$font-two: "nimbus-sans";
+
+
+
+// ........................................................FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+
+
+
+// ........................................................FONT SIZES
+$font-size-paragraph: 12px;
+$font-size-header: 24px;
+$font-size-title: 38px;
+$font-size-nav: 38px;
+$letter-spacing: 1px;
+
+
+
+// ........................................................FONT LINEHEIGHTS
+$font-lineheight-small: 22px;
+
+
+
+// ........................................................TEXT PADDINGS
+$padding-text: 5px;
+$padding-left: 0px;
+$padding-headline-bottom: 20px;
+
+
+
+// ........................................................COLORS
+$color-one: rgba(255, 255, 255, 1);
+$color-two: rgba(190, 197, 127, 1);
+$color-text: rgba(255, 255, 255, 1);
+$color-subtext: rgba(156, 156, 156, 1);
+$color-light-grey: rgba(233, 233, 233, 1);
+
+$red: rgba(206, 17, 17, 1);
+$red-opaque: rgba(206, 17, 17, 0.4);
+
+
+
+// ........................................................MARGINS
+$margin-sides: 20px;
+$margin-bottom: 35px;
+$margin-top: 20px;
+
+
+
+// ........................................................TRANSITION TIMINGS
+$transition-extreme-slow: 1.4s;
+$transition-slow: .6s;
+$transition-medium: .4s;
+$transition-fast: .2s;
+
+
+
+// ........................................................COLOR CHANGES
+
+
+
+
+// ........................................................FADE INS
+$smooth-scroll-timing: 1.4s;
+$collection-fade-zero: .2s;
+$collection-fade-out: .4s;
+$collection-fade-in: 1.4s;
+
+
+$z-index-loader: 999;
+
+$z-nav: 300;
+$z-home: 10;
+$z-ad: 999;
+$z-main: 6;
+
+/*....................................................................................*/

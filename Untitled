@@ -1,0 +1,5 @@
+docker commit -a "Elia Fornari &lt;dev@eliafornari.com&gt;" -m "node and express by elia" ff4665b7dc36 node-express-elia:0.1
+
+docker tag node-express-elia:0.1 node-express-elia:latest
+
+docker tag node-express-elia eliafornari/node-express-elia
