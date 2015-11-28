@@ -80,15 +80,15 @@ hooks:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
    BeforeInstall:
-    - location: Scripts/installapache.sh
-      runas: root
-    - location: Scripts/startapache.sh
-      runas: root
+    - location:
+      runas:
+    - location:
+      runas:
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
    AfterInstall:
-    - location: Scripts/restartapache.sh
-      runas: root
+    - location:
+      runas:
 # During the ApplicationInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
