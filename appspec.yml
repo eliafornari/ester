@@ -79,31 +79,31 @@ hooks:
       runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-   BeforeInstall:
-    - location:
-      runas:
-    - location:
-      runas:
+  #  BeforeInstall:
+  #   - location:
+  #     runas:
+  #   - location:
+  #     runas:
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-   AfterInstall:
-    - location:
-      runas:
+  #  AfterInstall:
+  #   - location:
+  #     runas:
 # During the ApplicationInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  ApplicationStart:
-    - location:
-      timeout:
-      runas:
-    - location:
-      timeout:
-      runas:
+  # ApplicationStart:
+  #   - location:
+  #     timeout:
+  #     runas:
+  #   - location:
+  #     timeout:
+  #     runas:
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  ValidateService:
-    - location:
-      timeout:
-      runas:
-    - location:
-      timeout:
-      runas:
+  # ValidateService:
+  #   - location:
+  #     timeout:
+  #     runas:
+  #   - location:
+  #     timeout:
+  #     runas:
