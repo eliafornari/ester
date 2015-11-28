@@ -3,3 +3,6 @@ docker commit -a "Elia Fornari &lt;dev@eliafornari.com&gt;" -m "node and express
 docker tag node-express-elia:0.1 node-express-elia:latest
 
 docker tag node-express-elia eliafornari/node-express-elia
+
+
+arn:aws:iam::209339240935:role/CodeDeployServiceRole
