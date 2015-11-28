@@ -23,10 +23,8 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source:
-    destination:
-  - source:
-    destination:
+   - source: /
+     destination: /var/www/html
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions"
 #   section here that describes special permissions to apply to the files
@@ -38,20 +36,13 @@ files:
 #   "permissions" section altogether. A blank or incomplete "permissions"
 #   section may cause associated deployments to fail.
 permissions:
-  - object:
-    pattern:
-    except:
-    owner:
-    group:
-    mode:
-    acls:
-      -
-    context:
-      user:
-      type:
-      range:
-    type:
-      -
+   - object: /var/www/html
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
 # If you are not running any commands on the instance, then remove
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
@@ -88,22 +79,16 @@ hooks:
       runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  BeforeInstall:
-    - location:
-      timeout:
-      runas:
-    - location:
-      timeout:
-      runas:
+   BeforeInstall:
+    - location: Scripts/installapache.sh
+      runas: root
+    - location: Scripts/startapache.sh
+      runas: root
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  AfterInstall:
-    - location:
-      timeout:
-      runas:
-    - location:
-      timeout:
-      runas:
+   AfterInstall:
+    - location: Scripts/restartapache.sh
+      runas: root
 # During the ApplicationInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
   ApplicationStart:
