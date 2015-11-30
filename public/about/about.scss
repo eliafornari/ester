@@ -1,0 +1,26 @@
+about{
+
+}
+
+
+.about-table{
+  width: 100vw;
+  height: 100vh;
+  tr{
+    td{
+      height:100%;
+      vertical-align: middle;
+      .about-text{
+        position: relative;
+        left:50%;
+        width: 300px;
+        height: auto;
+        margin-left: -150px;
+        span{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

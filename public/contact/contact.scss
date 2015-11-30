@@ -1,0 +1,32 @@
+contact{
+
+}
+
+
+.contact-table{
+  width: 100vw;
+  height: 100vh;
+  tr{
+    td{
+      height:100%;
+      vertical-align: middle;
+      .contact-ul{
+        position: relative;
+        left:50%;
+        width: 300px;
+        height: auto;
+        margin-left: -150px;
+        .contact-li{
+          text-align: center;
+          width: 100%;
+          margin-bottom: 20px;
+          color: $color-text;
+          a{
+            @include hover-effect-color();
+          }
+
+        }
+      }
+    }
+  }
+}
